@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Owner": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "integer"
+    },
+    "HomePage": {
+      "type": "json"
+    },
+    "AboutPage": {
+      "type": "json"
+    },
+    "MyProjectsPage": {
+      "type": "json"
+    },
+    "HobbiesPage": {
+      "type": "json"
+    },
+    "ContactPage": {
+      "type": "json"
+    },
+    "Paid": {
+      "type": "boolean"
+    },
+    "PaymentDate": {
+      "type": "date"
+    },
+    "in_box": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::in-box.in-box"
+    },
+    "Profile1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Profile2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ManagementMatrix": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "HobbiesTopImgs": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "HobbiesBottomImgs": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
